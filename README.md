@@ -5,4 +5,6 @@ This repository is a customized set of template files to be used with [gotests](
 
 ## Differences
 
-1. arguments to functions are no longer split out into an `args` `struct`
+1. Arguments to functions are no longer split out into an `args` `struct`
+2. Use require instead of reflect for comparisons
+3. Use `tc` instead of `tt` (test case)
