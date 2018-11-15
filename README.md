@@ -8,3 +8,16 @@ This repository is a customized set of template files to be used with [gotests](
 1. Arguments to functions are no longer split out into an `args` `struct`
 2. Use require instead of reflect for comparisons
 3. Use `tc` instead of `tt` (test case)
+
+## Vscode usage
+
+Checkout this repo and add the following to your user settings:
+
+```json
+{
+ "go.generateTestsFlags": [
+        "-template_dir",
+        "<path-to-folder>/dotlou/goteststemplates/templates"
+    ],
+}
+```
