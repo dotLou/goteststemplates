@@ -52,7 +52,7 @@ func {{.TestName}}(t *testing.T) {
 					{{Param .}} := &bytes.Buffer{}
 				{{- end}}
 			{{- end}}
-			{{- if and (not .OnlyReturnsError) (not .OnlyReturnsOneValue) }}
+			{{- if and (not .OnlyReturnsError) }}
 				{{template "results" $f}} {{template "call" $f}}
 			{{- end}}
 			{{- if .ReturnsError}}
